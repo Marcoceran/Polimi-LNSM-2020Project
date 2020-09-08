@@ -5,7 +5,7 @@ set(0,'DefaultLineLineWidth',0.2);
 
 %% scenario settings (4000x4000m)
 parameters.xmin = -2000; parameters.ymin = -2000;
-parameters.xmax =  2000; parameters.ymax =  2000;
+parameters.xmax =  2000; parameters.ymax =  2000;      % we define the limits of the plane region which we are plotting in
 
 %% TASK - 1a %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 UE_a = [0, 0];
@@ -25,7 +25,7 @@ grid on;
 axis equal 
 
 %% TASK - 1b %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-UE_b = [500, -800];
+UE_b = [500, -800];      %% those are the coordinates of the UE used in task 1b
 
 load('Task1b_rhoUEAP')
 
